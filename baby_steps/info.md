@@ -29,6 +29,9 @@
     . All routes must be placed inside the app folder
     . Every file that corresponds to a route must be named page.js or page.tsx
     . Each folder corresponds to a path segment in the browser URL
-    # next js automatically creates layout.tsx to render the page.tsx component
+    # next js automatically creates layout.tsx to render the page.tsx component    
+  }
+  ## Nested routes{
+    . we can nest folders
   }
 }
