@@ -41,4 +41,16 @@
   ## Catch-all segments{
     
   }
+  ## Private folders{
+    . A private folder indicates that it is a private implementation detail and should not be considered by the routing system
+    . This means that this folder and all its subfolder are excluded from routing
+    . To create a private folder , simply prefix the folder name with an underscore
+    # usage{
+      . seperating UI logic from routing logic
+      . for consistency organizing internal files across a project
+      . sorting and grouping files in code editors
+      . avoiding potential naming conflicts with future Next.js file conventions
+    }
+    . If you want to include an underscore in URL segments, you can prefix the folder name with "%5F" , which is the URL-encoded form of an underscore
+  }
 }
