@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "start the app in development mode": "next dev",
     "build": "next build",
+    "build the app for production usage": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "start the app production server": "next start",
+    "lint": "next lint",
+    "": ""
   },
   "dependencies": {
     "react": "^18",
