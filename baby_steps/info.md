@@ -32,6 +32,9 @@
     # next js automatically creates layout.tsx to render the page.tsx component    
   }
   ## Nested routes{
-    . we can nest folders
+    . we nest folders
+  }
+  ## dynamic routes{
+    . Every page in the app router receives route parameters as a prop
   }
 }
