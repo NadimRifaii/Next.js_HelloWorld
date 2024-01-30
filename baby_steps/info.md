@@ -38,4 +38,7 @@
     . Every page in the app router receives route parameters as a prop
   }
   ## nested dynamic routes
+  ## Catch-all segments{
+    
+  }
 }
