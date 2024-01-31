@@ -57,4 +57,10 @@
     . Allows us to logically group our routes and project files without affecting the URL path structure
     . Authentication routes
   }
+  ## Layouts{
+    - a page is a UI that is unique to a route
+    - a layout is a UI that is shared between multiple pages in the app
+    - We can define a layout by default exporting a react component from a layout.js or layout.tsx file
+    - That component should accept a children prop that will be populated with a child page during rendering
+  }
 }
