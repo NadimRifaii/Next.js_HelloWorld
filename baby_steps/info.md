@@ -53,4 +53,8 @@
     }
     . If you want to include an underscore in URL segments, you can prefix the folder name with "%5F" , which is the URL-encoded form of an underscore
   }
+  ## Route groups{
+    . Allows us to logically group our routes and project files without affecting the URL path structure
+    . Authentication routes
+  }
 }
