@@ -56,11 +56,35 @@
   ## Route groups{
     . Allows us to logically group our routes and project files without affecting the URL path structure
     . Authentication routes
+    . Primary use is to organize the project in a manner that doesn't affect the URL
   }
   ## Layouts{
     - a page is a UI that is unique to a route
     - a layout is a UI that is shared between multiple pages in the app
     - We can define a layout by default exporting a react component from a layout.js or layout.tsx file
     - That component should accept a children prop that will be populated with a child page during rendering
+  }
+  # Route Group Layout{
+    . To selectively apply a layout to certain segments while leaving others unchanged
+    . Routes outside of the group do not share the layout
+  }
+  # Routing metadata{
+    . Ensuring proper search engine optimization (SEO) is crucial for increasing visibility and attracting users
+    . Next.js introduced the Metadata API which allows you to define metadata for each page
+    . Metadata ensures accurate and relevant information is displayed when your pages are shared or indexed
+
+    - Configuring Metadata{
+      . Export a static metadata object
+      . Export a dynamic generateMetadata function
+
+      # Metadata rules[
+        . Both layout.tsx and page.tsx files can export metadata. If defined in a layout, it applies to all pages in that layout
+        . If defined in a page, it applies only to that page
+
+        . Metadata is read in order, from the root level down to the final page
+
+        . When there's metadata in multiple places for the same route, they get combined but page metadata will replace layout metadata if they have the same properties
+      ]
+    }
   }
 }
